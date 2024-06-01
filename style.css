@@ -67,6 +67,13 @@ body{
     }
 }
 
+@media screen and (max-width: 414px) {
+    .Header {
+        height: 48px;
+        padding: 0;
+    }
+}
+
 /*----------------headercontainer--------------------*/
 
 .HeaderContainer {
@@ -105,6 +112,9 @@ a {
     text-decoration: none;
 }
 
+
+
+
 *, *:before, *:after {
     word-break: break-all;
     -webkit-box-sizing: border-box;
@@ -116,6 +126,18 @@ a {
 @media screen and (max-width: 767px) {
     .HeaderLogo__image--pc {
         display: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .HeaderLogo:hover {
+        opacity: .8;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .HeaderLogo {
+        transition: opacity .2s;
     }
 }
 
@@ -374,9 +396,16 @@ ul {
     box-sizing: border-box;
 }
 
-/*--li class--*/
+/*--ここから　　ーーーーーーー　li class--*/
+
 @media screen and (min-width: 768px) {
-    .HeaderNavListItem {
+    .HeaderLogo:hover {
+        opacity: .8;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .HeaderLogo {
         transition: opacity .2s;
     }
 }
@@ -396,6 +425,8 @@ padding: 0;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
 
 /*-----ここからHeaderNavLintItem link-----*/
 .HeaderNavListItem__link {
@@ -581,7 +612,7 @@ a {
 
 
 
-/*　企業研修 */
+/*　ーーヘッダーーー学習内容　〜　企業研修ーーーー */
 .HeaderNavListItem__link>span:first-child {
     font-family: "Lato", sans-serif;
     font-size: 12px;
@@ -601,7 +632,26 @@ a {
     box-sizing: border-box;
 }
 
+/* hover */
+
+@media screen and (min-width: 768px) {
+    .HeaderNavListItem:hover {
+        opacity: .8;
+    }
+}
+@media screen and (min-width: 768px) {
+    .HeaderNavListItem {
+        transition: opacity .2s;
+    }
+}
+
 /*-------------------headerlistlembuttom--ボタンオレンジ無料カウンセリング-----------------*/
+@media screen and (min-width: 768px) {
+    .HeaderNavListItem__button:hover {
+        opacity: .8;
+    }
+}
+
 .HeaderNavListItem__button:visited {
     color: #fff;
 }
@@ -989,6 +1039,14 @@ img {
 }
 
 /*ーーーーーーーーーーbutton--------------------------*/
+/* hover */
+@media screen and (min-width: 768px) {
+    .FirstViewContent__button:hover {
+        opacity: .8;
+    }
+}
+
+
 .FirstViewContent__button:visited {
     color: #fff;
 }
